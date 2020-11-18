@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <script src="./index.js"></script>
+  <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body class="navBg">
+  <div class="navBox">
+    <form action="">
+
+      <h2>Form Validation</h2>
+      <hr>
+      <label>Nama Pelanggan: </label><br>
+      <input type="text" id="np" />
+      <label id="msgnp"></label>
+      <br>
+      <br>
+      <label>Email: </label><br>
+      <input type="email" id="email" />
+      <label id="msgEmail"></label>
+      <br>
+      <br>
+      <label>Jam Keberangkatan: </label><br>
+      <input type="text" id="jam" />
+      <label id="msgJam"></label>
+      <br>
+      <br>
+      <label>Tujuan Keberangkatan: </label><br>
+      <input type="text" id="tujuan" />
+      <label id="msgTujuan"></label>
+      <br>
+      <br>
+
+      <label>Jumlah Tiket: </label><br>
+      <input type="text" id="jumlah" />
+      <label id="msgJumlah"></label>
+
+      <br>
+      <br>
+
+    </form>
+    <input onclick="valid()" type="submit" value="Login" />
+    <br><br>
+    <form action="">
+      <h2>Hasil Datanya</h2>
+      <hr>
+      <label>Nama Pelanggan: <p id="hNp"></p></label><br><br>
+      <label>Email: <p id="hEmail"></p></label><br><br>
+      <label>Jam Keberangkatan: <p id="hJam"></p></label><br><br>
+      <label>Tujuan Keberangkatan: <p id="hTujuan"></p></label><br><br>
+      <label>Jumlah Tiket: <p id="hJumlah"></p></label><br><br>
+    </form>
+
+  </div>
+</body>
+
+</html>

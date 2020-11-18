@@ -1,0 +1,22 @@
+.navBg {
+  background: linear-gradient( 90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 212, 70, 1) 0%, rgba(0, 212, 255, 1) 100%);
+  font-family: verdana;
+}
+
+.navBox {
+  flex-direction: column;
+  background: #ffffff;
+  padding: 40px 80px 40px 80px;
+  margin: 80px auto;
+  box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 350px;
+}
+
+.navBox a {
+  text-decoration: none;
+  color: darkseagreen;
+}
+
+.navBox a:hover {
+  color: tomato;
+}

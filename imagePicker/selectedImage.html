@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function pilih() {
+      let list = document.getElementById('buah')
+      let idx = list.selectedIndex;
+      let areaGambar = document.getElementById('gambar')
+      areaGambar.src = "gambar/" + list[idx].value + ".jpg"
+    }
+  </script>
+  <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body class="navBg">
+  <form class="navBox" id="frm">
+    Pilih Buah : <select name="buah" id="buah" onchange="pilih()">
+      <option value="mangga">mangga</option>
+      <option value="apel">apel</option>
+      <option value="anggur">anggur</option>
+    </select>
+  </form>
+  <br>
+  <img id="gambar" src="gambar/mangga.jpg" alt="">
+</body>
+
+</html>

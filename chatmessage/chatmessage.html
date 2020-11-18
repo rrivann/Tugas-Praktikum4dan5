@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function kirim() {
+      let data = document.getElementById('input')
+      let button = document.getElementById('button')
+      let hasil = [data.value]
+      console.log(hasil);
+      document.getElementById('rsl').innerHTML += hasil + "<br/>"
+      data.value = ""
+    }
+  </script>
+  <link rel="stylesheet" href="style/index.css">
+  <style>
+    .hasilChat {
+      width: 500px;
+      height: 500px;
+      border-width: 0.5px;
+      border-style: solid;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body class="navBg">
+  <form class="navBox" action="">
+    <div class="hasilChat">
+      <div class="rr">
+
+        <p id="rsl"></p>
+      </div>
+    </div>
+    <br>
+    <input style="width: 450px;" type="text" name="" id="input" value=""><input style="margin-left: 20px;" type="button" value="kirim" id="button" onclick="kirim()">
+  </form>
+</body>
+
+</html>

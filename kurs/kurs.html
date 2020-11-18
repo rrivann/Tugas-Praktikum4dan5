@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+table,  td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  </style>
+  <script>
+    function cnvrt(){
+      let nilai = document.getElementById('nilai').value
+      let pilihan = document.getElementById('values').value
+      let dollar = 9915
+      let dollarsg = 13472
+      let ringgit = 874
+      let yen = 120
+      let euro = 15888
+      let riyal = 3592
+      if(isNaN(nilai)){
+        alert('isi form dengan angka')
+      }else{
+        if(pilihan == 'DollarUs'){
+          hasil = nilai * dollar
+          document.getElementById('hasil').innerHTML = hasil + ' Rupiah'
+        } if(pilihan == 'DollarSingapore'){
+          hasil = nilai * dollarsg
+          document.getElementById('hasil').innerHTML = hasil + ' Rupiah'
+        } if(pilihan == 'RinggitMalaysia'){
+          hasil = nilai * ringgit
+          document.getElementById('hasil').innerHTML = hasil + ' Rupiah'
+        } if(pilihan == 'YenJepang'){
+          hasil = nilai * yen
+          document.getElementById('hasil').innerHTML = hasil + ' Rupiah'
+        } if(pilihan == 'Euro'){
+          hasil = nilai * euro
+          document.getElementById('hasil').innerHTML = hasil + ' Rupiah'
+        } if(pilihan == 'RiyalArabSaudi'){
+          hasil = nilai * riyal
+          document.getElementById('hasil').innerHTML = hasil + ' Rupiah'
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style/index.css">
+</head>
+<body class="navBg">
+  <form  class="navBox" action="">
+    <fieldset>
+      <legend>Kurs Rupiah - Mata Uang Asing</legend>
+      <table style="width: 100%;">
+        <tr>
+          <th>
+            Masukkan nilai
+          </th>
+          <th>
+            Valas
+          </th>
+          <th>
+            Nilai rupiah
+          </th>
+        </tr>
+        <tr>
+          <td><input id="nilai" value="" type="text" style="width: 98%;"></td>
+          <td>
+            <select id="values" style="width: 100%;">
+              <option id="DollarUs" value="DollarUs">Dollar Us</option>
+              <option id="DollarSingapore" value="DollarSingapore">Dollar Singapore</option>
+              <option id="RinggitMalaysia" value="RinggitMalaysia">Ringgit Malaysia</option>
+              <option id="YenJepang" value="YenJepang">Yen Jepang</option>
+              <option id="Euro" value="Euro">Euro</option>
+              <option id="RiyalArabSaudi" value="RiyalArabSaudi">Riyal Arab Saudi</option>
+            </select>
+          </td>
+          <td>
+          <h2 id="hasil"></h2>
+        </tr>
+      </table>
+      <br>
+      <input type="button" value="convert" onclick="cnvrt()">
+    </fieldset>
+  </form>
+</body>
+</html>
