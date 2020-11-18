@@ -9,4 +9,4 @@ Jurusan : Teknik Informatika - TI08
 
 ## Screenshot
 
-![picture](ssdashboard.png)
+![picture](ss/ssdashboard.png)
